@@ -1,0 +1,7 @@
+{
+  "name": "narco-customs-katalog",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
