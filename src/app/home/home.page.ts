@@ -9,4 +9,11 @@ export class HomePage {
 
   constructor() {}
 
+  color_name: any = "Cock Rot"
+  category: any = "Sport"
+
+  category_change(c: any){
+    this.category = c;
+  }
+
 }

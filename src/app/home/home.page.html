@@ -1,20 +1,526 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>
-      Blank
+    <ion-title class="ion-text-center">
+      Felgen Katalog
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content [fullscreen]="true"> 
+  <ion-grid>
+    <ion-row>
+      <ion-col size="1.2"><ion-button (click)="category_change('Sport')" [fill]="category == 'Sport' ? 'solid':'outline'" expand="block">Sport</ion-button></ion-col>
+      <ion-col size="1.2"><ion-button (click)="category_change('Muscle')" [fill]="category == 'Muscle' ? 'solid':'outline'" expand="block">Muscle</ion-button></ion-col>
+      <ion-col size="1.2"><ion-button (click)="category_change('Lowrider')" [fill]="category == 'Lowrider' ? 'solid':'outline'" expand="block">Lowrider</ion-button></ion-col>
+      <ion-col size="1.2"><ion-button (click)="category_change('SUV')" [fill]="category == 'SUV' ? 'solid':'outline'" expand="block">SUV</ion-button></ion-col>
+      <ion-col size="1.2"><ion-button (click)="category_change('Offroad')"[fill]="category == 'Offroad' ? 'solid':'outline'" expand="block">Offroad</ion-button></ion-col>
+      <ion-col size="1.2"><ion-button (click)="category_change('Tuner')" [fill]="category == 'Tuner' ? 'solid':'outline'" expand="block">Tuner</ion-button></ion-col>
+      <ion-col size="1.2"><ion-button (click)="category_change('High End')" [fill]="category == 'High End' ? 'solid':'outline'" expand="block">High End</ion-button></ion-col>
+      <ion-col size="1.2"><ion-button (click)="category_change('Bennys Orig.')" [fill]="category == 'Bennys Orig.' ? 'solid':'outline'" expand="block">Bennys Orig.</ion-button></ion-col>
+      <ion-col size="1.2"><ion-button (click)="category_change('Bennys Besp.')" [fill]="category == 'Bennys Besp.' ? 'solid':'outline'" expand="block">Bennys Besp.</ion-button></ion-col>
+      <ion-col size="1.2"><ion-button (click)="category_change('Strasse')" [fill]="category == 'Strasse' ? 'solid':'outline'" expand="block">Straße</ion-button></ion-col> 
+    </ion-row>
+  </ion-grid>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="6"><img src="https://via.placeholder.com/150" alt=""></ion-col>
+      <ion-col size="6">
+        <ion-grid class="innerGrid">
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+          <ion-row>
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+            <ion-col size="0.54"><div style="background: #fff"></div></ion-col> 
+          </ion-row>
+        </ion-grid>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6" class="ion-text-center">
+        <ion-button fill="clear">
+          <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+        </ion-button>
+        <ion-button fill="clear">
+          <ion-icon slot="icon-only" name="arrow-forward"></ion-icon>
+        </ion-button>
+      </ion-col>
+      <ion-col size="6" class="ion-text-center">
+        {{ color_name }}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

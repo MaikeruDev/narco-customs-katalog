@@ -1,27 +1,46 @@
-#container {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Prosto+One&display=swap');
 
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-header{
+  ion-toolbar{ 
+    border-bottom: 2px solid white;
+    ion-title{
+      margin: 45px 0px 45px 0px;
+      font-size: 50px;    
+      font-family: 'Prosto One', cursive;
+      font-weight: bold;
+    }
+  }
 }
-
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-content{
+  ion-grid:first-child{ 
+    margin: 65px 250px 0px 250px
+  } 
+  ion-grid:nth-child(2){  
+    ion-row{
+      ion-col:first-child{
+        padding-right: 20px;
+      }
+      ion-col{
+        img{
+          width: 100%;
+          height: 100%;
+        }
+        ion-grid{
+          margin: 0px; 
+          ion-row{
+            margin: -7px 0 -7px 0;
+            ion-col{
+              div{ 
+                cursor: pointer;
+                width: 25px;
+                height: 25px; 
+                border: 2px solid #14001b; 
+              } 
+            }
+          }
+        }
+      }
+    }
+  } 
 }
-
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
-}
-
-#container a {
-  text-decoration: none;
-}
+ 
